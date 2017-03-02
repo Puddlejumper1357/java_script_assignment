@@ -161,31 +161,16 @@ var MakeLink=function(wording, link){
 	var myLink=document.createElement('a');
 	myLink.setAttribute("href",link)
 	myLink.textContent=wording;
-	para.appendChild(myLink);
+	myDiv.appendChild(myLink);
 
 }
-MakeLink('Fibonacci \n',"https://oeis.org/A000045");
-MakeLink(' Pell \n',"https://oeis.org/A000129");
-MakeLink(' Tribonacci\n',"https://oeis.org/A000073");
+MakeLink('Fibonacci ',"https://oeis.org/A000045");
+MakeLink(' Pell ',"https://oeis.org/A000129");
+MakeLink(' Tribonacci',"https://oeis.org/A000073");
 
 
 
-/*
-var fibLink=document.createElement('a');
-fibLink.setAttribute("href","https://oeis.org/A000045");
-fibLink.textContent='Fibonacci ';
-myDiv.appendChild(fibLink);
 
-var pellLink=document.createElement('a');
-pellLink.setAttribute("href","https://oeis.org/A000129");
-pellLink.textContent='Pell ';
-myDiv.appendChild(pellLink);
-
-var tribLink=document.createElement('a');
-tribLink.setAttribute("href","https://oeis.org/A000073");
-tribLink.textContent='Tribonacci';
-myDiv.appendChild(tribLink);
-*/
 makeDiv('green','paragraph');
 var element=document.getElementById("paragraph");
 element.appendChild(myDiv);
