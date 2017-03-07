@@ -184,3 +184,105 @@ MakeLink(' Tribonacci',"https://oeis.org/A000073");
 makeDiv('green','paragraph');
 var element=document.getElementById("paragraph");
 element.appendChild(myDiv);
+
+
+var styleSheet=document.createElement('style');
+styleSheet.textContent=
+	"#fib {" +
+"	display: inline-block;" +
+"	width: 20000px;" +
+"}" +
+".fib{" +
+"    background-color: rgba(200,0,0,0.1);" +
+"}" +
+".fib-left{" +
+"    float: left;" +
+"    display: inline-block;" +
+"    margin-right: 4px;" +
+"}" +
+".fib-right{" +
+"        float: right;" +
+"    display: inline-block;" +
+"    margin-left: 4px;" +
+"}" +
+"#pell{" +
+"	display: inline-block;" +
+"	width: 20000px;" +
+"}" +
+".pell{" +
+"    background-color: rgba(0,0,200,0.1);" +
+"}" +
+".pell-left{" +
+"    float: left;" +
+"    display: inline-block;" +
+"    margin-right: 4px;" +
+"}" +
+".pell-right{" +
+"        float: right;" +
+"    display: inline-block;" +
+"    margin-left: 4px;" +
+"}" +
+"#trib{" +
+"    display: inline-block;" +
+"	width: 50000px;" +
+"}" +
+".trib{" +
+"    background-color: rgba(0,0,0,0.1);" +
+"}" +
+".trib-left{" +
+"    float: left;" +
+"    display: inline-block;" +
+"    margin-right: 4px;" +
+"  " +
+"}" +
+".trib-center{" +
+"    float: center;" +
+"    display: inline-block;" +
+"    " +
+"}" +
+".trib-right{" +
+"        float: right;" +
+"    display: inline-block;" +
+"    margin-left: 4px;" +
+"   " +
+"}" +
+".stuff-box {" +
+"	font-family: 'helvetica neue', helvetica, sans-serif;" +
+"	letter-spacing: 1px;" +
+"	text-transform: capitalize;" +
+"	text-align: center;" +
+"	padding: 3px 10px;" +
+"	margin: 10px;" +
+"	cursor: pointer;" +
+"	border-radius: 10px;" +
+"	border-width: 2px;" +
+"	border-style: solid;" +
+"}" +
+".shadowed {" +
+"	text-shadow: 1px 1px 2px black;" +
+"	color:       white;" +
+"}" +
+".red {" +
+"	border-color: rgb(255,0,0);" +
+"	background:   rgb(180,60,60);" +
+"	box-shadow: 1px 1px 2px rgba(200,0,0,0.4);" +
+"}" +
+"" +
+".yellow {" +
+"	border-color: rgb(255,255,0);" +
+"	background:   rgb(180,180,60);" +
+"	box-shadow: 1px 1px 2px rgba(200,200,0,0.4);" +
+"}" +
+"" +
+".blue {" +
+"	border-color: rgb(0,0,255);" +
+"	background:   rgb(60,60,180);" +
+"	box-shadow: 1px 1px 2px rgba(0,0,200,0.4);" +
+"}" +
+".green{" +
+"	border-color: rgb(0,255,0);" +
+"	background: rgb(60,180,60);" +
+"	box-shadow: 1px 1px 2px rgba(0,200,0,.4);" +
+"}" ;
+
+document.querySelector('body').appendChild(styleSheet);
