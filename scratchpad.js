@@ -1,3 +1,6 @@
+document.title='Your mission: to create a webpage using as little HTML as possible';
+
+
 function myFibfuc(n){
 	var value;
 var div=document.createElement('div');
@@ -153,7 +156,7 @@ trib(11, document.querySelector('.red'));
 var myDiv=document.createElement('div');
 myDiv.setAttribute("id", "pargraph");
 var para=document.createElement('p');
-para.textContent=("Here are some links to learn more:");
+para.textContent=("Here are some links to learn more: ");
 myDiv.appendChild(para);
 
 
@@ -161,7 +164,14 @@ var MakeLink=function(wording, link){
 	var myLink=document.createElement('a');
 	myLink.setAttribute("href",link)
 	myLink.textContent=wording;
-	myDiv.appendChild(myLink);
+
+var myList=document.createElement('ul');
+myList.appendChild(myLink);
+myDiv.appendChild(myList);
+
+
+
+//	myDiv.appendChild(myLink);
 
 }
 MakeLink('Fibonacci ',"https://oeis.org/A000045");
